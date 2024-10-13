@@ -36,3 +36,39 @@ def cambio_id_64901(id):
         return 30913
     else:
         return id
+    
+def cambio_id_130214(id):
+    if id == 130214:
+        return 440088
+    else:
+        return id
+    
+def cambio_id_410002(id):
+    if id == 410002:
+        return 240102
+    else:
+        return id
+    
+def cambio_id_873001(id):
+    if id == 873001:
+        return 673001
+    else:
+        return id
+    
+def cambio_id_393002(id):
+    if id == 393002:
+        return 682010
+    else:
+        return id
+    
+def cambio_id_110246(id):
+    if id == 110246:
+        return 200246
+    else:
+        return id
+    
+def cambio_id_207001(id):
+    if id == 207001:
+        return 307002
+    else:
+        return id
