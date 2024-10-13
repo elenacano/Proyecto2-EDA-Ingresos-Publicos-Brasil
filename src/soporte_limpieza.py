@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 
 def suma(a,b):
@@ -11,7 +12,16 @@ def rellenar_id_os(id, nombre, dic, df):
 def rellenar_os(id, nombre, dic, df):
     if dic[id] != nombre :
         df["nombre organizacion"] = dic[id]
-        
+
+# def rellenar_orga_sup(row):
+#     with open('../datos/diccionario_orga_a_sup.json', 'r') as file:
+#         diccionario_orga_a_sup = json.load(file)
+#     # Accedemos a los nulos que etán donde ambos campos son nulos.
+#     if pd.isna(row['id organizacion superior']) and pd.isna(row['organizacion superior']):
+#         id_org = row['id organizacion']
+#         if id_org in diccionario_orga_a_sup:
+#             row['id organizacion superior'], row['organizacion superior'] = diccionario_orga_a_sup[id_org]
+#     return row       
 
 def cambio_id_39251(id):
     if id == 39251:
